@@ -15,7 +15,7 @@
     <hr>
     <nav>
         <div class="fnav">
-            <a href="index.html" id="Activenav"> Home </a>
+            <a href="index.php" id="Activenav"> Home </a>
         </div>
         <a href="nav\me.php"> About me </a>
         <div class="lnav">
