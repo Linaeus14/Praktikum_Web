@@ -115,16 +115,41 @@ main {
  #dataview tr:nth-child(odd) {
   background-color: #f5f5f5;
  }
- #dataview tr td button a{
+ #dataview tr td{
   color: #3a3b3c;
   font-weight: normal;
+ }
+ #dataview button{
+  color: #d0ccd0;
  }
  main input {
   width: 90%;
   box-sizing: border-box;
  }
+ main button{
+  display: inline-block;
+  margin-top: 4px;
+  margin-right: 4px;
+  color: #d0ccd0;
+  background-color: #3a3b3c;
+  text-align: center;
+  padding: 10px 20px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+ }
  main button a{
   text-decoration: none;
+  color: #d0ccd0;
+ }
+ main button:hover {
+  background-color: black;
+ }
+ input {
+  padding: 8px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
  }
  input[type=text] {
   transition: width 0.4s ease-in-out;
@@ -132,11 +157,32 @@ main {
  input[type=text]:focus {
   width: 100%;
  }
+ input[type=radio] {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #3a3b3c;
+ }
  input[type=email] {
   transition: width 0.4s ease-in-out;
  }
  input[type=email]:focus {
   width: 100%;
+ }
+ input[type=submit] {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 4px;
+  color: #d0ccd0;
+  background-color: #3a3b3c;
+  text-align: center;
+  padding: 10px 20px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+ }
+ input[type=submit]:hover {
+  background-color: black;
  }
  main article{
   text-align: justify;
