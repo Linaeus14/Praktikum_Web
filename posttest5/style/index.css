@@ -143,6 +143,9 @@ main {
   text-decoration: none;
   color: #d0ccd0;
  }
+ main button a:hover{
+  color: #FBFCFF;
+ }
  main button:hover {
   background-color: black;
  }
