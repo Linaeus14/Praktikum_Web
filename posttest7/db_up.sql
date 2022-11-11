@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2022 at 11:13 AM
+-- Generation Time: Nov 11, 2022 at 02:10 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -60,13 +60,9 @@ CREATE TABLE `files` (
 --
 
 INSERT INTO `files` (`id`, `filename`, `tanggal_up`) VALUES
-(33, '9S.jpg', '31/10/2022'),
-(35, '9So.jpg', '01/11/2022'),
-(36, 'Osame2.jpg', '02/11/2022'),
-(37, 'shuten1_16_9.jpg', '02/11/2022'),
-(38, 'shuten1.jpg', '02/11/2022'),
-(39, 'mash1.jpg', '02/11/2022'),
-(40, 'Florance1.jpg', '02/11/2022');
+(41, '20221107_114508.jpg', '11/11/2022'),
+(42, '1040264.png', '11/11/2022'),
+(43, 'IMG_20221110_112357.jpg', '11/11/2022');
 
 -- --------------------------------------------------------
 
@@ -88,13 +84,9 @@ CREATE TABLE `story` (
 --
 
 INSERT INTO `story` (`id`, `judul`, `penulis`, `sinopsis`, `cerita`, `file_id`) VALUES
-(45, 'Aku yang sedang menunggu', 'Lnn', 'Saat sendiri, manusia akan mulai berpikir lebih banyak. Cendrung mengabaikan hal disekitar, yang tidak terjangkau oleh tangan. Untuk diriku, melihat ke arah dunia menjadi kebiasaanku. Warna langit, awan yang terus bergerak, cahaya yang masuk ke mata. \"Ahh, indahnya dunia\". Tetapi bagaimana didalamnya? Kebanyakan orang sudah tau dengan phrasa \"Jangan nilai sesuatu dari sampulnya\". Penipuan, konflik, penindasan, tidakkah itu indah? Pengalaman diri terhadap kehidupan, umur, waktu, Kau akan melihat dunia untuk kedua kalinya. Jadi, saat ada yang bertanya \"Bukankah dunia begitu indah?\". Bagaimana kau akan menjawabnya?', 'Saat sendiri, manusia akan mulai berpikir lebih banyak. Cendrung mengabaikan hal disekitar, yang tidak terjangkau oleh tangan. Untuk diriku, melihat ke arah dunia menjadi kebiasaanku. Warna langit, awan yang terus bergerak, cahaya yang masuk ke mata. \"Ahh, indahnya dunia\". Tetapi bagaimana didalamnya? Kebanyakan orang sudah tau dengan phrasa \"Jangan nilai sesuatu dari sampulnya\". Penipuan, konflik, penindasan, tidakkah itu indah? Pengalaman diri terhadap kehidupan, umur, waktu, Kau akan melihat dunia untuk kedua kalinya. Jadi, saat ada yang bertanya \"Bukankah dunia begitu indah?\". Bagaimana kau akan menjawabnya?\r\n\r\nAbc', 33),
-(47, 'Apel', 'me', 'Saat sendiri, manusia akan mulai berpikir lebih banyak. Cendrung mengabaikan hal disekitar, yang tidak terjangkau oleh tangan. Untuk diriku, melihat ke arah dunia menjadi kebiasaanku. Warna langit, awan yang terus bergerak, cahaya yang masuk ke mata. \"Ahh, indahnya dunia\". Tetapi bagaimana didalamnya? Kebanyakan orang sudah tau dengan phrasa \"Jangan nilai sesuatu dari sampulnya\". Penipuan, konflik, penindasan, tidakkah itu indah? Pengalaman diri terhadap kehidupan, umur, waktu, Kau akan melihat dunia untuk kedua kalinya. Jadi, saat ada yang bertanya \"Bukankah dunia begitu indah?\". Bagaimana kau akan menjawabnya?', 'Saat sendiri, manusia akan mulai berpikir lebih banyak. Cendrung mengabaikan hal disekitar, yang tidak terjangkau oleh tangan. Untuk diriku, melihat ke arah dunia menjadi kebiasaanku. Warna langit, awan yang terus bergerak, cahaya yang masuk ke mata. \"Ahh, indahnya dunia\". Tetapi bagaimana didalamnya? Kebanyakan orang sudah tau dengan phrasa \"Jangan nilai sesuatu dari sampulnya\". Penipuan, konflik, penindasan, tidakkah itu indah? Pengalaman diri terhadap kehidupan, umur, waktu, Kau akan melihat dunia untuk kedua kalinya. Jadi, saat ada yang bertanya \"Bukankah dunia begitu indah?\". Bagaimana kau akan menjawabnya?', 35),
-(48, '12312', 'me2', 'aa', 'aa', 36),
-(49, 'dasdadasdsa', 'dasda', 'asbab', 'fasfas', 37),
-(50, 'adasdadw', 'hreht', 'adsad', 'hrtrhr', 38),
-(51, 'dasdsahw', 'asda', 'fdh', 'asdfas', 39),
-(52, 'adsa', 'dassdasfasfasf', 'dadsa', 'afasf', 40);
+(53, 'Apel', 'me', 'aa a a a a a a a a a a a aaaaaaaaaaaa  a a a aaa', 'aa a a a a a a a a a a a aaaaaaaaaaaa  a a a aaa a a a a aaaaa', 41),
+(54, 'Orange', 'me', 'bbbbbbbb bbbbbbbbbbb bbbbbbbb bbbbbbb bbbbbbbbb bbbbbbbbb', 'bbbbbbbb bbbbbbbbbbb bbbbbbbb bbbbbbb bbbbbbbbb bbbbbbbbb', 42),
+(55, 'Not Wise With The Existence', 'Nae', 'Saat sendiri, manusia akan mulai berpikir lebih banyak. \r\n                Cendrung mengabaikan hal disekitar, yang tidak terjangkau oleh tangan. \r\n                Untuk diriku, melihat ke arah dunia menjadi kebiasaanku. \r\n                Warna langit, awan yang terus bergerak, cahaya yang masuk ke mata.\r\n                \"Ahh, indahnya dunia\". \r\n                Tetapi bagaimana didalamnya? Kebanyakan orang sudah tau dengan phrasa \"Jangan nilai sesuatu dari sampulnya\". \r\n                Penipuan, konflik, penindasan, tidakkah itu indah? \r\n                Pengalaman diri terhadap kehidupan, umur, waktu, Kau akan melihat dunia untuk kedua kalinya.\r\n                Jadi, saat ada yang bertanya \"Bukankah dunia begitu indah?\". Bagaimana kau akan menjawabnya?. ', 'Saat sendiri, manusia akan mulai berpikir lebih banyak. \r\n                Cendrung mengabaikan hal disekitar, yang tidak terjangkau oleh tangan. \r\n                Untuk diriku, melihat ke arah dunia menjadi kebiasaanku. \r\n                Warna langit, awan yang terus bergerak, cahaya yang masuk ke mata.\r\n                \"Ahh, indahnya dunia\". \r\n                Tetapi bagaimana didalamnya? Kebanyakan orang sudah tau dengan phrasa \"Jangan nilai sesuatu dari sampulnya\". \r\n                Penipuan, konflik, penindasan, tidakkah itu indah? \r\n                Pengalaman diri terhadap kehidupan, umur, waktu, Kau akan melihat dunia untuk kedua kalinya.\r\n                Jadi, saat ada yang bertanya \"Bukankah dunia begitu indah?\". Bagaimana kau akan menjawabnya?. ', 43);
 
 --
 -- Indexes for dumped tables
@@ -127,19 +119,19 @@ ALTER TABLE `story`
 -- AUTO_INCREMENT for table `akun`
 --
 ALTER TABLE `akun`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `story`
 --
 ALTER TABLE `story`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- Constraints for dumped tables

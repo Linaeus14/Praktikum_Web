@@ -1,5 +1,5 @@
 <?php
-    require "../php/session.php";
+    require "../php/sessionu.php";
     require "../php/header.php";
 ?>  
 <nav>
@@ -14,13 +14,13 @@
 </nav>
 <main>
     <div class="me">
-        <img src="https://tinyurl.com/profilepictitod" width = 20% height = 20% alt="Profilepic" id="Profilepic" \>
+        <img src="../img/tito.jpeg" width = 20% height = 20% alt="Profilepic" id="Profilepic" \>
         <h1> Tito Darmawan </h1>
         <p><strong> Mahasiswa </strong></p>
         <hr>
     </div>
     <div class="me2">
-        <p> NIM : 2109106042 <br> Web ini dibuat demi memenuhi tugas UTS praktikum pemrograman web </p>
+        <p> NIM : 2109106042 <br> Web ini dibuat demi memenuhi tugas matkul pemrograman web </p>
     </div>
 </main>
 <?php require "../php/footer.php"?>  

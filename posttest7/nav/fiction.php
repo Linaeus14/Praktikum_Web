@@ -1,37 +1,62 @@
 <?php 
-    require "../php/session.php";
+    require "../db/conn.php";
+    require "../db/tb_s.php";
+    require "../php/sessionu.php";
     require "../php/header.php";
 ?>    
 <nav>
     <div class="fnav">
         <a href="../dashboard/user.php"> Home </a>
     </div>
-    <a href="me.php"> About me </a>
+        <a href="me.php"> About me </a>
     <div class="lnav">
         <a href="fiction.php" id="Activenav"> Stories </a>
     </div>
     <a href="../php/logout.php" id="Logout"> Log Out </a>
 </nav>
 <main>
+    <form id = "search" action = "" method = "get">
+        <table id="searchbar">
+            <tr> 
+                <?php if(isset($key)){?>
+                    <td> <input type="text" name='key' placeholder="judul/penulis" value="<?php echo $key?>" > </td> 
+                <?php }else{ ?>
+                    <td> <input type="text" name='key' placeholder="judul/penulis"> </td>
+                <?php } ?>
+                <td> <button type="submit" name='sdb'> Cari </button> </td>
+            </tr>
+        </table>
+    </form>
+    <table id=dataview>
+        <?php while ($s = mysqli_fetch_assoc($result)) { ?>
+                <td > <?php $path = '../file/'.$s['filename']; echo "<img src=$path alt='cover' height='120vh' width='130vw'>" ?> </td>
+                <td> 
+                <div class="stories">
+                    <h3><a href="../page/story.php?id=<?php echo $s["id"]; ?>"><?php echo $s['judul']?></a></h3>
+                    <h6><?php echo $s['penulis'] ?> </h6>
+                    <div class="sinmo3"> <?php echo $s['sinopsis'] ?> </div>
+                </div>
+                </td >
+            </tr>
+        </div>
+        <?php }?>
+    </table>
+    <p><b> Halaman <?php echo $page ?> </b></p>
     <hr>
-    <img src="../img/Logo1.png" alt="Logo1" height="25%" width="25%">
-    <h3> Cerita </h3>
-    <h2> Aku yang sedang menunggu </h2>
-    <p> by Lnn</p>
-    <article>
-        <hr>
-        <p>
-            Saat sendiri, manusia akan mulai berpikir lebih banyak. 
-            Cendrung mengabaikan hal disekitar, yang tidak terjangkau oleh tangan. 
-            Untuk diriku, melihat ke arah dunia menjadi kebiasaanku. 
-            Warna langit, awan yang terus bergerak, cahaya yang masuk ke mata.
-            "Ahh, indahnya dunia". 
-            Tetapi bagaimana didalamnya? Kebanyakan orang sudah tau dengan phrasa "Jangan nilai sesuatu dari sampulnya". 
-            Penipuan, konflik, penindasan, tidakkah itu indah? 
-            Pengalaman diri terhadap kehidupan, umur, waktu, Kau akan melihat dunia untuk kedua kalinya.
-            Jadi, saat ada yang bertanya "Bukankah dunia begitu indah?". Bagaimana kau akan menjawabnya?. 
-            ...in progress.
-        </p>
-    </article>
+    <?php
+        for ($i=1; $i<=$pages ; $i++){
+            if(isset($key)){
+    ?>
+        <a href="?halaman=<?php echo $i ?>&key=<?php echo $key ?>"> <?php echo $i; ?></a>
+    <?php 
+            }
+            else{
+    ?>
+        <a href="?halaman=<?php echo $i ?>"> <?php echo $i; ?> </a>
+    <?php
+            }
+        }
+    ?>
+    <hr>
 </main>
-<?php require "../php/footer.php"?>  
+<?php require "../php/footer.php"?>

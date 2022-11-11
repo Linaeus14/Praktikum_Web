@@ -1,4 +1,4 @@
-<?php require "../php/session.php"?>
+<?php require "../php/sessionu.php"?>
 <?php require "../php/header.php"?>
     <nav>
         <div class="fnav">
