@@ -15,15 +15,16 @@
     <a href="../php/logout.php" id="Logout"> Log Out </a>
 </nav>
 <main>             
-    <p style="margin-top: 20px;"></p>
-            <?php $path = '../file/'.$s['filename']; echo "<img src=$path alt='cover' height='160vh' width='130vw'>" ?> 
+    <p style="margin-top: 20px;"> ___-V-___ </p>
+            <?php $path = '../file/'.$s['filename']; echo "<img src=$path alt='cover' height='100' width='180'>" ?> 
                 <div class="stories">
                     <h3><?php echo $s['judul'] ?></a> </h3>
                     <h6><?php echo $s['penulis'] ?> </h6>
-                    <div class="sinmo4"> <?php echo $s['cerita'] ?> </div>
+                    <div class="sinmo4"> <?php echo $s['cerita'] ?> </div>  
                 </div>
                 </td >
             </tr>
         </div>
+    <p style="margin-bottom: 20px;"> ___-Λ-___ </p>
 </main>
 <?php require "../php/footer.php"?>

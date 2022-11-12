@@ -29,7 +29,7 @@
     </form>
     <table id=dataview>
         <?php while ($s = mysqli_fetch_assoc($result)) { ?>
-                <td > <?php $path = '../file/'.$s['filename']; echo "<img src=$path alt='cover' height='120vh' width='130vw'>" ?> </td>
+                <td > <?php $path = '../file/'.$s['filename']; echo "<img src=$path alt='cover' height='100' width='180''>" ?> </td>
                 <td> 
                 <div class="stories">
                     <h3><a href="../page/story.php?id=<?php echo $s["id"]; ?>"><?php echo $s['judul']?></a></h3>
